@@ -21,9 +21,4 @@ export const contacts = [
     icon: faGithub,
     link: 'https://github.com/Isabellagouveias',
   },
-  {
-    name: 'Instagram',
-    icon: faInstagram,
-    link: 'https://www.instagram.com/isabellagouveias/',
-  },
 ];
