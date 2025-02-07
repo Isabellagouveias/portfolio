@@ -1,0 +1,89 @@
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 1000px;
+  color: #ffffff;
+}
+
+.about-me-container h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.separator {
+  width: 100%;
+  max-width: 1500px;
+  height: 4px;
+  background: linear-gradient(to right, #3B82F6, transparent);
+  border-radius: 2px;
+  margin: 10px 0 20px;
+}
+
+.about-me-container p {
+  font-size: 0.95em;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.about-me-container strong {
+  color: #3B82F6;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+
+@media (min-width: 640px) {
+  .about-me-container {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+  }
+
+  .about-me-container h2 {
+    font-size: 2em;
+  }
+
+  .about-me-container p {
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-me-container {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 900px;
+  }
+
+  .about-me-container h2 {
+    font-size: 1.5em;
+  }
+
+  .about-me-container p {
+    font-size: 1.15em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-me-container {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1000px;
+  }
+
+  .about-me-container h2 {
+    font-size: 2.5em;
+  }
+
+  .about-me-container p {
+    font-size: 1.2em;
+  }
+}

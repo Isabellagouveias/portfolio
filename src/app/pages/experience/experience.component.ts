@@ -1,0 +1,59 @@
+import { Component, OnInit } from '@angular/core';
+import * as moment from 'moment';
+import { faCodeCommit } from '@fortawesome/free-solid-svg-icons';
+import { trigger, transition, style, animate } from '@angular/animations';
+
+import { JOBS } from 'src/app/shared/constants/jobs.constant';
+import { JobInterface } from './interface/job.interface';
+
+@Component({
+  selector: 'app-experience',
+  templateUrl: './experience.component.html',
+  styleUrls: ['./experience.component.scss'],
+  animations: [
+    trigger('fadeIn', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate('300ms ease-in', style({ opacity: 1 })),
+      ]),
+    ]),
+  ],
+})
+export class ExperienceComponent implements OnInit {
+  public jobs = JOBS;
+  public faCodeCommit = faCodeCommit;
+
+  public selectedJob: JobInterface = this.jobs[0];
+
+  constructor() {}
+
+  ngOnInit() {
+    this.updateCurrentJobDuration();
+  }
+
+  selectJob(job: JobInterface) {
+    this.selectedJob = job;
+  }
+
+  updateCurrentJobDuration() {
+    const currentJob = this.jobs[0];
+    if (currentJob.endDate === 'Atualmente') {
+      const startDate = moment(currentJob.startDate, 'MMMM YYYY');
+      if (startDate.isValid()) {
+        const currentDate = moment();
+        const duration = moment.duration(currentDate.diff(startDate));
+        const years = duration.years();
+        const months = duration.months();
+        if (months === 0 && years > 0) {
+          currentJob.duration = `${years} ano${years > 1 ? 's' : ''}`;
+        } else if (years > 0) {
+          currentJob.duration = `${years} ano${years > 1 ? 's' : ''} e ${months} mês${months > 1 ? 'es' : ''}`;
+        } else {
+          currentJob.duration = `${months} mês${months > 1 ? 'es' : ''}`;
+        }
+      } else {
+        console.error(`Data inválida: ${currentJob.startDate}`);
+      }
+    }
+  }
+}

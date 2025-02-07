@@ -1,0 +1,125 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 1000px;
+  color: #ffffff;
+}
+
+.contact-container h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* Separator com degradê e bordas arredondadas */
+.separator {
+  width: 100%; /* Ajusta o separador para ocupar toda a largura do container */
+  max-width: 1500px; /* Define um máximo para a largura do separador */
+  height: 4px;
+  background: linear-gradient(
+    to right,
+   #3B82F6,
+    transparent
+  ); /* Degradê à direita */
+  border-radius: 2px;
+  margin: 10px 0 20px;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 10px 0 20px;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+
+  .btn-contact {
+    background-color: #1e1e2f;
+    color:#3B82F6;
+    border: 2px solid#3B82F6;
+    padding: 12px 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color:#3B82F6;
+      color: black;
+      transform: translateY(-5px);
+    }
+
+    .contact-icon {
+      font-size: 1.5em;
+    }
+  }
+}
+
+/* sm (mínimo de 640px) */
+@media (min-width: 640px) {
+  .contact-container {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+  }
+
+  .contact-container h2 {
+    font-size: 2em;
+  }
+
+  .contact-container p {
+    font-size: 1.1em;
+  }
+}
+
+/* md (mínimo de 768px) */
+@media (min-width: 768px) {
+  .contact-container {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 900px;
+  }
+
+  .contact-container h2 {
+    font-size: 1.5em;
+  }
+
+  .contact-container p {
+    font-size: 1.15em;
+  }
+
+}
+
+/* lg (mínimo de 1024px) */
+@media (min-width: 1024px) {
+  .contact-container {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1000px;
+  }
+
+  .contact-container h2 {
+    font-size: 2.5em;
+  }
+
+  .contact-container p {
+    font-size: 1.2em;
+  }
+
+}

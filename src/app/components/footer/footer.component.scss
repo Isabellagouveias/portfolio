@@ -1,0 +1,32 @@
+.footer-container {
+  background-color: #282c34;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.footer-top-line {
+  height: 3px;
+  background-color: #3B82F6;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.footer-right {
+  font-size: 14px;
+  text-align: right;
+}
+
+.footer-right strong {
+  color: #3B82F6;
+}
+
+.footer-right .gouveia {
+  color: #60A5FA;
+}

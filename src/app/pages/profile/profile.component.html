@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="photo">
+    <img
+      src="assets/images/isa.jpg"
+      alt="Foto de Perfil"
+      class="profile-photo"
+    />
+  </div>
+  <div class="name">
+    <p class="title shake">
+      <ngx-typed2
+      [strings]="[
+          'Desenvolvedora Front-End',
+          'Aspirante a se destacar no front-end',
+          'Focada em entregar experiências incríveis para os usuários',
+          'Entusiasta de novas tecnologias e inovações',
+          'Sempre buscando melhorar performance e acessibilidade',
+          'Desenvolvedora comprometida com aprendizado contínuo'
+        ]"
+        [typeSpeed]="60"
+        [backSpeed]="30"
+        [loop]="true"
+        [showCursor]="true"
+        cursorChar="●"
+      ></ngx-typed2>
+    </p>
+    <div class="social-buttons">
+      <a
+        href="https://github.com/Isabellagouveias"
+        target="_blank"
+        class="social-btn github"
+      >
+        <fa-icon [icon]="faGithub"></fa-icon> GitHub
+      </a>
+      <a
+        href="https://www.linkedin.com/in/isabellagouveias/"
+        target="_blank"
+        class="social-btn linkedin"
+      >
+        <fa-icon [icon]="faLinkedin"></fa-icon> LinkedIn
+      </a>
+    </div>
+  </div>
+</div>

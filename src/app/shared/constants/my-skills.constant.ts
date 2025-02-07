@@ -1,0 +1,92 @@
+export const MY_SKILLS = [
+  {
+    name: 'HTML',
+    icon: 'assets/icons/html.icon.svg',
+    alt: 'Logo do HTML',
+    aosAnimation: 'zoom-out-down',
+  },
+  {
+    name: 'CSS',
+    icon: 'assets/icons/css.icon.svg',
+    alt: 'Logo do CSS',
+    aosAnimation: 'zoom-out-down',
+  },
+  {
+    name: 'TypeScript',
+    icon: 'assets/icons/typescript-icon.svg',
+    alt: 'Logo do TypeScript',
+    aosAnimation: 'zoom-out-up',
+  },
+  {
+    name: 'RxJs',
+    icon: 'assets/icons/rxjs-icon.svg',
+    alt: 'Logo do RxJs',
+    aosAnimation: 'zoom-out-down',
+  },
+  {
+    name: 'SCSS',
+    icon: 'assets/icons/scss-icon.svg',
+    alt: 'Logo do SCSS',
+    aosAnimation: 'zoom-out-down',
+  },
+  {
+    name: 'Bootstrap',
+    icon: 'assets/icons/bootstrap-icon.svg',
+    alt: 'Logo do Bootstrap',
+    aosAnimation: 'zoom-out-up',
+  },
+  {
+    name: 'Tailwind',
+    icon: 'assets/icons/tailwind-icon.svg',
+    alt: 'Logo do Tailwind',
+    aosAnimation: 'zoom-out-up',
+  },
+  {
+    name: 'Angular Material',
+    icon: 'assets/icons/angular-material-icon.svg',
+    alt: 'Logo do Angular Material',
+    aosAnimation: 'zoom-out-down',
+  },
+  {
+    name: 'JSON',
+    icon: 'assets/icons/json-icon.svg',
+    alt: 'Logo do JSON',
+    aosAnimation: 'zoom-out-down',
+  },
+  {
+    name: 'MomentJs',
+    icon: 'assets/icons/momentjs.icon.svg',
+    alt: 'Logo do MomentJs',
+    aosAnimation: 'zoom-out-down',
+  },
+  {
+    name: 'Swagger',
+    icon: 'assets/icons/swagger.icon.svg',
+    alt: 'Logo do Swagger',
+    aosAnimation: 'zoom-out-down',
+  },
+  {
+    name: 'Git',
+    icon: 'assets/icons/git-icon.svg',
+    alt: 'Logo do Git',
+    aosAnimation: 'zoom-out-up',
+  },
+  {
+    name: 'GitHub',
+    icon: 'assets/icons/github-icon.svg',
+    alt: 'Logo do GitHub',
+    aosAnimation: 'zoom-out-up',
+  },
+  {
+    name: 'Angular',
+    icon: 'assets/icons/angular-icon.svg',
+    alt: 'Logo do Angular',
+    aosAnimation: 'zoom-out-down',
+  },
+  {
+    name: 'Node.js',
+    icon: 'assets/icons/nodejs-icon.svg',
+    alt: 'Logo do Node.js',
+    aosAnimation: 'zoom-out-up',
+  },
+];
